@@ -6,53 +6,70 @@
   <title>Rogles Datenschutzberatung</title>
   <style>
     body {
-      font-family: system-ui, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      font-family: system-ui, sans-serif;
+      background-color: #f4f7fb;
       color: #222;
     }
+
     header {
       background-color: #005a9c;
       color: white;
-      padding: 3rem 2rem;
-      text-align: center;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
     }
+
+    header img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    section {
-      max-width: 800px;
+
+    main {
+      max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
-      background: white;
+      background-color: white;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+
     h2 {
       color: #005a9c;
-      margin-top: 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.4rem;
     }
+
+    .pakete {
+      margin: 1.5rem 0;
+    }
+
     .paket {
       margin-bottom: 1.5rem;
     }
+
     .paket h3 {
-      margin-bottom: 0.3rem;
+      margin: 0 0 0.4rem 0;
+      color: #003f75;
     }
+
     footer {
-      background: #eee;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem;
       font-size: 0.9rem;
+      color: #666;
     }
+
     a {
       color: #005a9c;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
@@ -61,46 +78,55 @@
 <body>
 
   <header>
+    <img src="logo.png" alt="Logo Rogles Datenschutzberatung">
     <h1>Rogles Datenschutzberatung</h1>
-    <p>Datenschutz – klar, verständlich und praxisnah.</p>
   </header>
 
-  <section>
+  <main>
+    <p>Herzlich willkommen bei <strong>Rogles Datenschutzberatung</strong> – Ihrer unabhängigen Datenschutzlösung für kleine Unternehmen. Flexibel. Kompetent. DSGVO-konform.</p>
+
     <h2>Unsere Leistungen</h2>
+    <div class="pakete">
+      <div class="paket">
+        <h3>📘 Externer Datenschutzbeauftragter</h3>
+        <p>Ab <strong>80 € netto / Monat</strong><br>
+        ✓ Eingetragen bei der Aufsichtsbehörde<br>
+        ✓ Jährliche Bestandsaufnahme<br>
+        ✓ Schriftlicher Empfehlungskatalog
+        </p>
+      </div>
 
-    <div class="paket">
-      <h3>Externer Datenschutzbeauftragter</h3>
-      <p>Ab 80 € netto/Monat. Eingetragen bei der zuständigen Aufsichtsbehörde.</p>
-      <p>✔ Jährliche Bestandsaufnahme<br>✔ Individueller Empfehlungskatalog</p>
+      <div class="paket">
+        <h3>📝 Prüfung von Datenschutzerklärungen</h3>
+        <p>Einmalig <strong>100 € netto</strong><br>
+        ✓ Analyse Ihrer Website-DSE<br>
+        ✓ Feedback & Verbesserungsvorschläge</p>
+      </div>
+
+      <div class="paket">
+        <h3>📄 AV-Vertragsprüfung</h3>
+        <p>✓ Juristische Prüfung von Auftragsverarbeitungsverträgen (AVV)<br>
+        ✓ Praktische Empfehlungen für Ihre Partnerverträge</p>
+      </div>
     </div>
 
-    <div class="paket">
-      <h3>Prüfung Ihrer Datenschutzerklärung</h3>
-      <p>Einmalig 100 € netto. Schnelle und rechtssichere Prüfung.</p>
-    </div>
-
-    <div class="paket">
-      <h3>AV-Vertragsprüfung</h3>
-      <p>Individuelle Prüfung Ihrer Auftragsverarbeitungsverträge (Preis auf Anfrage).</p>
-    </div>
-  </section>
-
-  <section>
     <h2>Kontakt</h2>
+    <p>Sie haben Fragen oder möchten ein Angebot erhalten? Schreiben Sie uns oder rufen Sie direkt an:</p>
     <p>
-      Rogles Datenschutzberatung<br>
-      Bastian Rogles<br>
-      Händelstraße 33<br>
-      44627 Herne<br><br>
       📧 <a href="mailto:kontakt.rogles@proton.me">kontakt.rogles@proton.me</a><br>
-      📞 (Telefonnummer optional)
+      ☎️ Telefon: [bitte Nummer ergänzen]<br>
+      📍 Bastian Rogles<br>
+      Händelstraße 33<br>
+      44627 Herne
     </p>
-  </section>
+
+    <p><a href="datenschutzerklaerung.html">Datenschutzerklärung</a> · <a href="impressum.html">Impressum</a></p>
+  </main>
 
   <footer>
-    <p><a href="impressum.html">Impressum</a> | <a href="datenschutzerklaerung.html">Datenschutzerklärung</a></p>
-    <p>© 2025 Rogles Datenschutzberatung</p>
+    © 2025 Rogles Datenschutzberatung
   </footer>
 
 </body>
 </html>
+
