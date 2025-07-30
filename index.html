@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rogles Datenschutzberatung</title>
+  <title>Rogles Datenschutzberatung - Externer DSB für KMU</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -65,25 +65,134 @@
     <p>Datenschutz – klar, verständlich und praxisnah.</p>
   </header>
 
-  <section>
-    <h2>Unsere Leistungen</h2>
+<style>
+/* --- Layout für Pakete --- */
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+}
 
-    <div class="paket">
-      <h3>Externer Datenschutzbeauftragter</h3>
-      <p>Ab 80 € netto/Monat. Eingetragen bei der zuständigen Aufsichtsbehörde.</p>
-      <p>✔ Jährliche Bestandsaufnahme<br>✔ Individueller Empfehlungskatalog</p>
+.pricing-card {
+  background-color: #f9f9f9;
+  border: 2px solid #007BFF;
+  border-radius: 12px;
+  width: 300px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+}
+
+.pricing-card h3 {
+  color: #007BFF;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+  padding-left: 1rem;
+  list-style: disc;
+  margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* --- Layout für Einzelleistungen --- */
+.single-services {
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background-color: #eef5ff;
+  border-radius: 10px;
+  border-left: 5px solid #007BFF;
+}
+
+.single-services h3 {
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.single-services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.single-services li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.single-services li:last-child {
+  border-bottom: none;
+}
+</style>
+
+<!-- Produktpakete Abschnitt -->
+<section id="pakete">
+  <h2 style="text-align: center; margin-bottom: 1rem;">📦 Produktpakete – Externer Datenschutzbeauftragter</h2>
+  <div class="pricing-container">
+    
+    <!-- Paket 1 -->
+    <div class="pricing-card">
+      <h3>DSB Start</h3>
+      <ul>
+        <li>Eintragung als externer DSB</li>
+        <li>Einmalige Bestandsaufnahme</li>
+        <li>Jährlicher Empfehlungskatalog</li>
+        <li>E-Mail-Support (Antwort in 5 Werktagen)</li>
+        <li>Zugriff auf Musterdokumente</li>
+      </ul>
+      <div class="price">ab 80 €/Monat (netto)</div>
     </div>
 
-    <div class="paket">
-      <h3>Prüfung Ihrer Datenschutzerklärung</h3>
-      <p>Einmalig 100 € netto. Schnelle und rechtssichere Prüfung.</p>
+    <!-- Paket 2 -->
+    <div class="pricing-card">
+      <h3>DSB Plus</h3>
+      <ul>
+        <li>Alle Leistungen aus DSB Start</li>
+        <li>Telefonberatung (1 Std./Monat)</li>
+        <li>Support per E-Mail & Signal</li>
+        <li>Prüfung von Datenschutzerklärungen</li>
+      </ul>
+      <div class="price">ab 160 €/Monat (netto)</div>
     </div>
 
-    <div class="paket">
-      <h3>AV-Vertragsprüfung</h3>
-      <p>Individuelle Prüfung Ihrer Auftragsverarbeitungsverträge (Preis auf Anfrage).</p>
+    <!-- Paket 3 -->
+    <div class="pricing-card">
+      <h3>DSB Pro+</h3>
+      <ul>
+        <li>Alle Leistungen aus DSB Plus</li>
+        <li>Jährliche Schulung für Mitarbeiter</li>
+        <li>Vor-Ort- oder Online-Workshop</li>
+        <li>4 Std. individuelle Beratung/Monat</li>
+        <li>Persönlicher Ansprechpartner</li>
+      </ul>
+      <div class="price">ab 400 €/Monat (netto)</div>
     </div>
-  </section>
+
+  </div>
+</section>
+
+<!-- Einzelleistungen Abschnitt -->
+<section class="single-services">
+  <h3>💼 Zubuchbare Einzelleistungen</h3>
+  <ul>
+    <li>✔️ AV-Vertragsprüfung – 100 € netto pro Dokument</li>
+    <li>✔️ Datenschutzerklärung prüfen & aktualisieren – 100 € netto</li>
+    <li>✔️ Datenschutz-Workshops & Schulungen (auf Anfrage)</li>
+    <li>✔️ Weitere individuelle Leistungen auf Anfrage</li>
+  </ul>
+</section>
 
   <section>
     <h2>Kontakt</h2>
