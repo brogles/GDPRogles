@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Externer Datenschutzbeauftragter für KMU – unkompliziert, verständlich und professionell. Rogles Datenschutzberatung – Datenschutz mit Praxisnähe.">
-<meta name="keywords" content="Datenschutz, Datenschutzbeauftragter, externer DSB, AV-Vertrag prüfen, DSGVO, Herne, NRW, KMU, Rogles">
-<meta name="author" content="Bastian Rogles">
+  <meta name="description" content="Externer Datenschutzbeauftragter ab 80 €/Monat – ideal für kleine Unternehmen. Rogles Datenschutzberatung aus Herne berät klar & praxisnah.">
+  <meta name="keywords" content="Datenschutz, Datenschutzbeauftragter, externer DSB, AV-Vertrag prüfen, DSGVO, Herne, NRW, KMU, Rogles">
+  <meta name="author" content="Bastian Rogles">
+  <title>Rogles Datenschutzberatung – Externer Datenschutzbeauftragter für KMU</title>
 
   <style>
     body {
@@ -28,36 +29,108 @@
       font-size: 1.2rem;
       margin-top: 0.5rem;
     }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
+    main {
+      max-width: 1200px;
+      margin: auto;
       padding: 2rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     h2 {
       color: #005a9c;
       margin-top: 0;
     }
-    .paket {
-      margin-bottom: 1.5rem;
+
+    .pricing-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
     }
-    .paket h3 {
-      margin-bottom: 0.3rem;
+
+    .pricing-card {
+      background-color: #f9f9f9;
+      border: 2px solid #007BFF;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 320px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
     }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .pricing-card h3 {
+      color: #007BFF;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-card ul {
+      padding-left: 1rem;
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-card .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .single-services {
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 900px;
+      background-color: #eef5ff;
+      border-radius: 10px;
+      border-left: 5px solid #007BFF;
+    }
+
+    .single-services h3 {
+      color: #007BFF;
+      margin-bottom: 1rem;
+    }
+
+    .single-services ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .single-services li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .single-services li:last-child {
+      border-bottom: none;
+    }
+
     footer {
       background: #eee;
       text-align: center;
       padding: 1.5rem;
       font-size: 0.9rem;
     }
+
     a {
       color: #005a9c;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -67,161 +140,78 @@
     <h1>Rogles Datenschutzberatung</h1>
     <p>Datenschutz – klar, verständlich und praxisnah.</p>
   </header>
-<title>Rogles Datenschutzberatung – Externer Datenschutzbeauftragter für KMU</title>
-<meta name="description" content="Externer Datenschutzbeauftragter ab 80 €/Monat – ideal für kleine Unternehmen. Rogles Datenschutzberatung aus Herne berät klar & praxisnah.">
 
-<style>
-/* --- Layout für Pakete --- */
-.pricing-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-  @media (max-width: 768px) {
-  .pricing-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+  <main>
 
+    <!-- Produktpakete Abschnitt -->
+    <section id="pakete">
+      <h2 style="text-align: center; margin-bottom: 1rem;">📦 Produktpakete – Externer Datenschutzbeauftragter</h2>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h3>DSB Start</h3>
+          <ul>
+            <li>Eintragung als externer DSB</li>
+            <li>Einmalige Bestandsaufnahme</li>
+            <li>Jährlicher Empfehlungskatalog</li>
+            <li>Zugriff auf Musterdokumente</li>
+          </ul>
+          <div class="price">ab 80 €/Monat (netto)</div>
+        </div>
 
-.pricing-card {
-  background-color: #f9f9f9;
-  border: 2px solid #007BFF;
-  border-radius: 12px;
-  width: 300px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-}
+        <div class="pricing-card">
+          <h3>DSB Plus</h3>
+          <ul>
+            <li>Alle Leistungen aus DSB Start</li>
+            <li>Beratung (1 Std./Monat inklusive)</li>
+            <li>Support per E-Mail & Signal</li>
+            <li>Prüfung von Datenschutzerklärungen</li>
+          </ul>
+          <div class="price">ab 160 €/Monat (netto)</div>
+        </div>
 
-.pricing-card:hover {
-  transform: translateY(-4px);
-}
+        <div class="pricing-card">
+          <h3>DSB Pro+</h3>
+          <ul>
+            <li>Alle Leistungen aus DSB Plus</li>
+            <li>Jährliche Schulung für Mitarbeiter</li>
+            <li>Vor-Ort- oder Online-Workshop</li>
+            <li>4 Std. individuelle Beratung pro Monat</li>
+            <li>24 Std. Reaktionszeit</li>
+          </ul>
+          <div class="price">ab 400 €/Monat (netto)</div>
+        </div>
+      </div>
+    </section>
 
-.pricing-card h3 {
-  color: #007BFF;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.pricing-card ul {
-  padding-left: 1rem;
-  list-style: disc;
-  margin-bottom: 1rem;
-}
-
-.pricing-card .price {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-/* --- Layout für Einzelleistungen --- */
-.single-services {
-  margin: 3rem auto;
-  padding: 2rem;
-  max-width: 900px;
-  background-color: #eef5ff;
-  border-radius: 10px;
-  border-left: 5px solid #007BFF;
-}
-
-.single-services h3 {
-  color: #007BFF;
-  margin-bottom: 1rem;
-}
-
-.single-services ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.single-services li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.single-services li:last-child {
-  border-bottom: none;
-}
-</style>
-
-<!-- Produktpakete Abschnitt -->
-<section id="pakete">
-  <h2 style="text-align: center; margin-bottom: 1rem;">📦 Produktpakete – Externer Datenschutzbeauftragter</h2>
-  <div class="pricing-container">
-    
-    <!-- Paket 1 -->
-    <div class="pricing-card">
-      <h3>DSB Start</h3>
+    <!-- Einzelleistungen Abschnitt -->
+    <section class="single-services">
+      <h3>💼 Einzelleistungen (zubuchbar)</h3>
       <ul>
-        <li>Eintragung als externer DSB</li>
-        <li>Einmalige Bestandsaufnahme</li>
-        <li>Jährlicher Empfehlungskatalog</li>
-        <li>Zugriff auf Musterdokumente</li>
+        <li>✔️ AV-Vertragsprüfung – 420 € netto pro Dokument</li>
+        <li>✔️ Datenschutzerklärung prüfen & aktualisieren – 150 € netto</li>
+        <li>✔️ Datenschutz-Workshops & Schulungen (auf Anfrage)</li>
+        <li>✔️ Weitere individuelle Leistungen (DFSA, Audit, Risikoanalyse) auf Anfrage – Stundensatz 120 € netto</li>
       </ul>
-      <div class="price">ab 80 €/Monat (netto)</div>
-    </div>
+    </section>
 
-    <!-- Paket 2 -->
-    <div class="pricing-card">
-      <h3>DSB Plus</h3>
-      <ul>
-        <li>Alle Leistungen aus DSB Start</li>
-        <li>Beratung (1 Std./Monat inklusive)</li>
-        <li>Support per E-Mail & Signal</li>
-        <li>Prüfung von Datenschutzerklärungen</li>
-      </ul>
-      <div class="price">ab 160 €/Monat (netto)</div>
-    </div>
+    <!-- Kontakt Abschnitt -->
+    <section>
+      <h2>Kontakt</h2>
+      <p>Sie haben Fragen oder möchten ein Angebot erhalten? Schreiben Sie uns oder rufen Sie direkt an:</p>
+      <p>
+        Rogles Datenschutzberatung<br>
+        Bastian Rogles<br>
+        Händelstraße 33<br>
+        44627 Herne<br><br>
+        📧 <a href="mailto:kontakt.rogles@proton.me">kontakt.rogles@proton.me</a><br>
+        📞 0170 821 4796
+      </p>
+      <h3>🔒 Kontakt via Signal</h3>
+      <p>Scannen Sie den QR-Code oder suchen Sie in Signal nach: <strong>GDPR.86</strong></p>
+      <img src="signal.png" alt="QR-Code zum Signal-Kontakt GDPR.86" style="max-width: 200px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    </section>
 
-    <!-- Paket 3 -->
-    <div class="pricing-card">
-      <h3>DSB Pro+</h3>
-      <ul>
-        <li>Alle Leistungen aus DSB Plus</li>
-        <li>Jährliche Schulung für Mitarbeiter</li>
-        <li>Vor-Ort- oder Online-Workshop</li>
-        <li>4 Std. individuelle Beratung pro Monat</li>
-        <li>24 Std. Reaktionszeit</li>
-      </ul>
-      <div class="price">ab 400 €/Monat (netto)</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Einzelleistungen Abschnitt -->
-<section class="single-services">
-  <h3>💼 Zubuchbare Einzelleistungen</h3>
-  <ul>
-    <li>✔️ AV-Vertragsprüfung – 420 € netto pro Dokument</li>
-    <li>✔️ Datenschutzerklärung prüfen & aktualisieren – 150 € netto</li>
-    <li>✔️ Datenschutz-Workshops & Schulungen (auf Anfrage)</li>
-    <li>✔️ Weitere individuelle Leistungen (DFSA, Audit, Risikoanalyse) auf Anfrage - Stundensatz 120 € netto</li>
-  </ul>
-</section>
-
-  <section>
-    <h2>Kontakt</h2>
-    <p>Sie haben Fragen oder möchten ein Angebot erhalten? Schreiben Sie uns oder rufen Sie direkt an:</p>
-    <p>
-      Rogles Datenschutzberatung<br>
-      Bastian Rogles<br>
-      Händelstraße 33<br>
-      44627 Herne<br><br>
-      📧 <a href="mailto:kontakt.rogles@proton.me">kontakt.rogles@proton.me</a><br>
-      📞 0170 821 4796
-    </p>
-    <h3>🔒 Kontakt via Signal</h3>
-<p>
-  Scannen Sie den QR-Code oder suchen Sie in Signal nach: <strong>GDPR.86</strong>
-</p>
-<img src="signal.png" alt="QR-Code zum Signal-Kontakt GDPR.86" style="max-width: 200px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-  </section>
+  </main>
 
   <footer>
     <p><a href="impressum.html">Impressum</a> | <a href="datenschutzerklaerung.html">Datenschutzerklärung</a></p>
@@ -230,5 +220,6 @@
 
 </body>
 </html>
+
 
 
