@@ -48,6 +48,11 @@
       padding-bottom: 1rem;
     }
 
+    .card-wrapper {
+      padding-top: 4px;
+      flex-shrink: 0;
+    }
+
     .pricing-card {
       background-color: #f9f9f9;
       border: 2px solid #007BFF;
@@ -57,7 +62,6 @@
       padding: 1.5rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       transition: transform 0.2s ease;
-      flex-shrink: 0;
     }
 
     .pricing-card:hover {
@@ -110,26 +114,6 @@
       border-bottom: none;
     }
 
-    .kontakt-box {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      line-height: 1.6;
-    }
-
-    .kontakt-box h2 {
-      color: #005a9c;
-      margin-top: 0;
-    }
-
-    .kontakt-box h3 {
-      color: #007BFF;
-      margin-top: 2rem;
-    }
-
     footer {
       background: #eee;
       text-align: center;
@@ -167,39 +151,47 @@
     <section id="pakete">
       <h2 style="text-align: center; margin-bottom: 1rem;">📦 Produktpakete – Externer Datenschutzbeauftragter</h2>
       <div class="pricing-container">
-        <div class="pricing-card">
-          <h3>DSB Start</h3>
-          <ul>
-            <li>Eintragung als externer DSB</li>
-            <li>Einmalige Bestandsaufnahme</li>
-            <li>Jährlicher Empfehlungskatalog</li>
-            <li>Zugriff auf Musterdokumente</li>
-          </ul>
-          <div class="price">ab 80 €/Monat (netto)</div>
+
+        <div class="card-wrapper">
+          <div class="pricing-card">
+            <h3>DSB Start</h3>
+            <ul>
+              <li>Eintragung als externer DSB</li>
+              <li>Einmalige Bestandsaufnahme</li>
+              <li>Jährlicher Empfehlungskatalog</li>
+              <li>Zugriff auf Musterdokumente</li>
+            </ul>
+            <div class="price">ab 80 €/Monat (netto)</div>
+          </div>
         </div>
 
-        <div class="pricing-card">
-          <h3>DSB Plus</h3>
-          <ul>
-            <li>Alle Leistungen aus DSB Start</li>
-            <li>Beratung (1 Std./Monat inklusive)</li>
-            <li>Support per E-Mail & Signal</li>
-            <li>Prüfung von Datenschutzerklärungen</li>
-          </ul>
-          <div class="price">ab 160 €/Monat (netto)</div>
+        <div class="card-wrapper">
+          <div class="pricing-card">
+            <h3>DSB Plus</h3>
+            <ul>
+              <li>Alle Leistungen aus DSB Start</li>
+              <li>Beratung (1 Std./Monat inklusive)</li>
+              <li>Support per E-Mail & Signal</li>
+              <li>Prüfung von Datenschutzerklärungen</li>
+            </ul>
+            <div class="price">ab 160 €/Monat (netto)</div>
+          </div>
         </div>
 
-        <div class="pricing-card">
-          <h3>DSB Pro+</h3>
-          <ul>
-            <li>Alle Leistungen aus DSB Plus</li>
-            <li>Jährliche Schulung für Mitarbeiter</li>
-            <li>Vor-Ort- oder Online-Workshop</li>
-            <li>4 Std. individuelle Beratung pro Monat</li>
-            <li>24 Std. Reaktionszeit</li>
-          </ul>
-          <div class="price">ab 400 €/Monat (netto)</div>
+        <div class="card-wrapper">
+          <div class="pricing-card">
+            <h3>DSB Pro+</h3>
+            <ul>
+              <li>Alle Leistungen aus DSB Plus</li>
+              <li>Jährliche Schulung für Mitarbeiter</li>
+              <li>Vor-Ort- oder Online-Workshop</li>
+              <li>4 Std. individuelle Beratung pro Monat</li>
+              <li>24 Std. Reaktionszeit</li>
+            </ul>
+            <div class="price">ab 400 €/Monat (netto)</div>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -215,11 +207,11 @@
     </section>
 
     <!-- Kontakt Abschnitt -->
-    <section class="kontakt-box">
-      <h2>📞 Kontakt</h2>
+    <section>
+      <h2>Kontakt</h2>
       <p>Sie haben Fragen oder möchten ein Angebot erhalten? Schreiben Sie uns oder rufen Sie direkt an:</p>
       <p>
-        <strong>Rogles Datenschutzberatung</strong><br>
+        Rogles Datenschutzberatung<br>
         Bastian Rogles<br>
         Händelstraße 33<br>
         44627 Herne<br><br>
@@ -240,5 +232,6 @@
 
 </body>
 </html>
+
 
 
