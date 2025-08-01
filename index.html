@@ -210,6 +210,35 @@ footer .footer-content nav {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image: url('https://source.unsplash.com/1600x900/?office,team,working');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.hero-overlay h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
 
   </style>
 </head>
@@ -217,6 +246,13 @@ footer .footer-content nav {
   <header>
     <h1>Rogles Datenschutzberatung</h1>
   </header>
+<section class="hero">
+  <div class="hero-overlay">
+    <h2>Externer Datenschutzbeauftragter<br>gemäß DSGVO</h2>
+  </div>
+</section>
+
+  
   <main>
     <section>
       <h2>Unsere Pakete</h2>
