@@ -203,7 +203,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #cce4f7; /* helleres Blau beim Hover */
+  color: #cce4f7; 
 }
 
 footer .footer-content nav {
@@ -216,9 +216,10 @@ footer .footer-content nav {
   background-image: url('hero.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 0 0 var(--radius) var(--radius);
-  box-shadow: var(--shadow);
-  margin-bottom: 2rem;
+  border-radius: var(--radius) var(--radius) 0 0; 
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); 
+  margin-top: -10px; 
+  z-index: 5;
 }
 
 .hero-overlay {
