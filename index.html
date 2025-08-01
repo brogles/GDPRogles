@@ -180,6 +180,32 @@
     .dark .package a:hover {
       background-color: #0056b3;
     }
+    footer {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 1.5rem 0;
+  text-align: center;
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: var(--shadow);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: underline;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #cce4f7; /* helleres Blau beim Hover */
+}
+
+footer .footer-content nav {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
   </style>
 </head>
 <body>
@@ -268,12 +294,15 @@
 
     </section>
   </main>
-  <footer>
-    <p style="text-align: center; padding: 2rem; font-size: 0.9rem; color: #666">
-     <p><a href="/impressum.html">Impressum</a> | <a href="/datenschutzerklaerung.html">Datenschutzerklärung</a></p>
-      © 2025 Rogles Datenschutzberatung
-    </p>
-  </footer>
+<footer>
+  <div class="footer-content">
+    <nav>
+      <a href="/impressum.html">Impressum</a> | <a href="/datenschutzerklaerung.html">Datenschutzerklärung</a>
+    </nav>
+    <p>© 2025 Rogles Datenschutzberatung</p>
+  </div>
+</footer>
+
 
 </body>
 </html>
