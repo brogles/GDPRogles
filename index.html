@@ -43,14 +43,12 @@
     .pricing-container {
       display: flex;
       justify-content: space-between;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       gap: 2rem;
       padding-bottom: 1rem;
-      overflow-x: unset;
     }
 
     .card-wrapper {
-      padding-top: 4px;
       flex-shrink: 0;
     }
 
@@ -62,11 +60,12 @@
       max-width: 320px;
       padding: 1.5rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .pricing-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     }
 
     .pricing-card h3 {
@@ -77,14 +76,37 @@
 
     .pricing-card ul {
       padding-left: 1rem;
-      list-style: disc;
+      list-style: none;
       margin-bottom: 1rem;
+    }
+
+    .pricing-card ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 0.4rem;
     }
 
     .pricing-card .price {
       font-size: 1.3rem;
       font-weight: bold;
       margin-top: 1rem;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      background-color: #005a9c;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+    }
+
+    .contact-button:hover {
+      background-color: #00447a;
+      transform: scale(1.03);
     }
 
     .single-services {
@@ -135,7 +157,6 @@
       .pricing-container {
         flex-direction: column;
         align-items: center;
-        overflow-x: auto;
       }
     }
   </style>
@@ -158,12 +179,13 @@
           <div class="pricing-card">
             <h3>DSB Start</h3>
             <ul>
-              <li>Eintragung als externer DSB</li>
-              <li>Einmalige Bestandsaufnahme</li>
-              <li>Jährlicher Empfehlungskatalog</li>
-              <li>Zugriff auf Musterdokumente</li>
+              <li>📋 Eintragung als externer DSB</li>
+              <li>🗂️ Einmalige Bestandsaufnahme</li>
+              <li>📑 Jährlicher Empfehlungskatalog</li>
+              <li>📄 Zugriff auf Musterdokumente</li>
             </ul>
             <div class="price">ab 80 €/Monat (netto)</div>
+            <a href="mailto:kontakt.rogles@proton.me" class="contact-button">Anfragen</a>
           </div>
         </div>
 
@@ -171,12 +193,13 @@
           <div class="pricing-card">
             <h3>DSB Plus</h3>
             <ul>
-              <li>Alle Leistungen aus DSB Start</li>
-              <li>Beratung (1 Std./Monat inklusive)</li>
-              <li>Support per E-Mail & Signal</li>
-              <li>Prüfung von Datenschutzerklärungen</li>
+              <li>📋 Alle Leistungen aus DSB Start</li>
+              <li>🕑 Beratung (1 Std./Monat inklusive)</li>
+              <li>✉️ Support per E-Mail & Signal</li>
+              <li>🔍 Prüfung von Datenschutzerklärungen</li>
             </ul>
             <div class="price">ab 160 €/Monat (netto)</div>
+            <a href="mailto:kontakt.rogles@proton.me" class="contact-button">Anfragen</a>
           </div>
         </div>
 
@@ -184,12 +207,13 @@
           <div class="pricing-card">
             <h3>DSB Pro+</h3>
             <ul>
-              <li>Alle Leistungen aus DSB Plus</li>
-              <li>Jährliche Schulung für Mitarbeiter</li>
-              <li>4 Std. individuelle Beratung pro Monat</li>
-              <li>24 Std. Reaktionszeit</li>
+              <li>📋 Alle Leistungen aus DSB Plus</li>
+              <li>🎓 Jährliche Schulung für Mitarbeiter</li>
+              <li>🧑‍💼 4 Std. individuelle Beratung pro Monat</li>
+              <li>⏱️ 24 Std. Reaktionszeit</li>
             </ul>
             <div class="price">ab 400 €/Monat (netto)</div>
+            <a href="mailto:kontakt.rogles@proton.me" class="contact-button">Anfragen</a>
           </div>
         </div>
 
@@ -226,11 +250,10 @@
 
   </main>
 
-<footer>
-  <p><a href="/impressum.html">Impressum</a> | <a href="/datenschutzerklaerung.html">Datenschutzerklärung</a></p>
-  <p>© 2025 Rogles Datenschutzberatung</p>
-</footer>
-
+  <footer>
+    <p><a href="/impressum.html">Impressum</a> | <a href="/datenschutzerklaerung.html">Datenschutzerklärung</a></p>
+    <p>© 2025 Rogles Datenschutzberatung</p>
+  </footer>
 
 </body>
 </html>
