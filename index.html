@@ -2,253 +2,273 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Externer Datenschutzbeauftragter ab 80 €/Monat – ideal für kleine Unternehmen. Rogles Datenschutzberatung aus Herne berät klar & praxisnah.">
-  <meta name="keywords" content="Datenschutz, Datenschutzbeauftragter, externer DSB, AV-Vertrag prüfen, DSGVO, Herne, NRW, KMU, Rogles">
-  <meta name="author" content="Bastian Rogles">
-  <meta name="google-site-verification" content="Mr8kjtLbe-90FosxlTCDZlRUoAnakTdjVXKCvibJMH4" />
-  <title>Rogles Datenschutzberatung – Externer Datenschutzbeauftragter für KMU</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rogles Datenschutzberatung</title>
   <style>
+    :root {
+      --blue: #005a9c;
+      --light-gray: #f9f9f9;
+      --white: #ffffff;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: system-ui, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
+      background-color: var(--light-gray);
       color: #222;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
     }
+
+    body.dark {
+      background-color: #111;
+      color: #eee;
+    }
+
     header {
-      background-color: #005a9c;
-      color: white;
-      padding: 3rem 2rem;
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 2rem;
       text-align: center;
     }
+
     header h1 {
-      margin: 0;
       font-size: 2rem;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
+
     main {
       max-width: 1200px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h2 {
-      color: #005a9c;
-      margin-top: 0;
+      margin: 2rem auto;
+      padding: 1rem;
     }
 
-    .pricing-container {
+    .packages {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 2rem;
-      padding-bottom: 1rem;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 4rem;
     }
 
-    .card-wrapper {
-      flex-shrink: 0;
-    }
-
-    .pricing-card {
-      background-color: #f9f9f9;
-      border: 2px solid #007BFF;
-      border-radius: 12px;
-      width: 100%;
-      max-width: 320px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    }
-
-    .pricing-card h3 {
-      color: #007BFF;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .pricing-card ul {
-      padding-left: 1rem;
-      list-style: none;
-      margin-bottom: 1rem;
-    }
-
-    .pricing-card ul li {
-      margin-bottom: 0.5rem;
-      padding-left: 0.4rem;
-    }
-
-    .pricing-card .price {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-
-    .contact-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      background-color: #005a9c;
-      color: white;
-      border-radius: 8px;
-      font-weight: bold;
-      text-align: center;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      text-decoration: none;
-    }
-
-    .contact-button:hover {
-      background-color: #00447a;
-      transform: scale(1.03);
-    }
-
-    .single-services {
-      margin: 3rem auto;
+    .package {
+      background-color: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      flex: 1 1 300px;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       padding: 2rem;
-      max-width: 900px;
-      background-color: #eef5ff;
-      border-radius: 10px;
-      border-left: 5px solid #007BFF;
     }
 
-    .single-services h3 {
-      color: #007BFF;
+    .package-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .package:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .package h3 {
+      font-size: 1.3rem;
       margin-bottom: 1rem;
+      color: var(--blue);
     }
 
-    .single-services ul {
+    .package ul {
       list-style: none;
-      padding-left: 0;
+      margin-bottom: 2rem;
     }
 
-    .single-services li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid #ccc;
+    .package li {
+      margin-bottom: 0.5rem;
     }
 
-    .single-services li:last-child {
-      border-bottom: none;
+    .price {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
     }
 
-    footer {
-      background: #eee;
+    .package a {
       text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #005a9c;
+      display: block;
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 0.8rem;
+      border-radius: 8px;
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .package a:hover {
+      background-color: #003f70;
     }
 
     @media (max-width: 768px) {
-      .pricing-container {
+      .packages {
         flex-direction: column;
         align-items: center;
       }
     }
+
+    section h2 {
+      text-align: center;
+      color: var(--blue);
+      margin: 3rem 0 1rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 0 1rem 4rem;
+    }
+
+    .service {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-3px);
+    }
+
+    .contact {
+      background-color: var(--white);
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .dark .package,
+    .dark .service,
+    .dark .contact {
+      background-color: #222;
+      color: #eee;
+    }
+
+    .dark .package a,
+    .dark .service a {
+      background-color: #007bff;
+    }
+
+    .dark .package a:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Rogles Datenschutzberatung</h1>
-    <p>Datenschutz – klar, verständlich und praxisnah.</p>
   </header>
-
   <main>
-
-    <!-- Produktpakete Abschnitt -->
-    <section id="pakete">
-      <h2 style="text-align: center; margin-bottom: 1rem;">📦 Produktpakete – Externer Datenschutzbeauftragter</h2>
-      <div class="pricing-container">
-
-        <div class="card-wrapper">
-          <div class="pricing-card">
-            <h3>DSB Start</h3>
+    <section>
+      <h2>Unsere Pakete</h2>
+      <div class="packages">
+        <div class="package">
+          <div class="package-content">
+            <h3>Basis</h3>
             <ul>
-              <li>📋 Eintragung als externer DSB</li>
-              <li>🗂️ Einmalige Bestandsaufnahme</li>
-              <li>📑 Jährlicher Empfehlungskatalog</li>
-              <li>📄 Zugriff auf Musterdokumente</li>
+              <li>Eintragung als externer DSB</li>
+              <li>Jährliche Bestandsaufnahme</li>
+              <li>Empfehlungskatalog nach Audit</li>
+              <li>Zugriff auf Musterdokumente</li>
             </ul>
-            <div class="price">ab 80 €/Monat (netto)</div>
-            <a href="mailto:kontakt.rogles@proton.me" class="contact-button">Anfragen</a>
+            <div>
+              <div class="price">ab 80 € / Monat zzgl. MwSt</div>
+              <a href="mailto:kontakt.rogles@proton.me">Anfragen</a>
+            </div>
           </div>
         </div>
-
-        <div class="card-wrapper">
-          <div class="pricing-card">
-            <h3>DSB Plus</h3>
+        <div class="package">
+          <div class="package-content">
+            <h3>Standard</h3>
             <ul>
-              <li>📋 Alle Leistungen aus DSB Start</li>
-              <li>🕑 Beratung (1 Std./Monat inklusive)</li>
-              <li>✉️ Support per E-Mail & Signal</li>
-              <li>🔍 Prüfung von Datenschutzerklärungen</li>
+              <li>Alle Leistungen aus Basis</li>
+              <li>Jährliche Schulung (Online)</li>
+              <li>Zugriff auf Musterdokumente</li>
+              <li>Allgemeine Beratung auf Zuruf</li>
             </ul>
-            <div class="price">ab 160 €/Monat (netto)</div>
-            <a href="mailto:kontakt.rogles@proton.me" class="contact-button">Anfragen</a>
+            <div>
+              <div class="price">ab 160 € / Monat zzgl. MwSt</div>
+              <a href="mailto:kontakt.rogles@proton.me">Anfragen</a>
+            </div>
           </div>
         </div>
-
-        <div class="card-wrapper">
-          <div class="pricing-card">
-            <h3>DSB Pro+</h3>
+        <div class="package">
+          <div class="package-content">
+            <h3>Premium</h3>
             <ul>
-              <li>📋 Alle Leistungen aus DSB Plus</li>
-              <li>🎓 Jährliche Schulung für Mitarbeiter</li>
-              <li>🧑‍💼 4 Std. individuelle Beratung pro Monat</li>
-              <li>⏱️ 24 Std. Reaktionszeit</li>
+              <li>Alle Leistungen aus Standard</li>
+              <li>Unterstützung bei DSFA & Verzeichnissen</li>
+              <li>Zugriff auf Musterdokumente</li>
+              <li>4 Stunden Beratung pro Monat</li>
+              <li>Schulung für bis zu 15 Mitarbeiter</li>
             </ul>
-            <div class="price">ab 400 €/Monat (netto)</div>
-            <a href="mailto:kontakt.rogles@proton.me" class="contact-button">Anfragen</a>
+            <div>
+              <div class="price">ab 400 € / Monat zzgl. MwSt</div>
+              <a href="mailto:kontakt.rogles@proton.me">Anfragen</a>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- Einzelleistungen Abschnitt -->
-    <section class="single-services">
-      <h3>💼 Einzelleistungen (zubuchbar)</h3>
-      <ul>
-        <li>✔️ AV-Vertragsprüfung – 420 € netto pro Dokument</li>
-        <li>✔️ Datenschutzerklärung prüfen & aktualisieren – 150 € netto</li>
-        <li>✔️ Datenschutz-Workshops & Schulungen (auf Anfrage)</li>
-        <li>✔️ Weitere individuelle Leistungen (DFSA, Audit, Risikoanalyse) auf Anfrage – Stundensatz 120 € netto</li>
-      </ul>
+    <section>
+      <h2>Einzelleistungen</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Prüfung von Datenschutzerklärungen</h3>
+          <p>Einmalige Prüfung Ihrer Datenschutzerklärung für Website oder App.</p>
+          <p><strong>100 € zzgl. MwSt</strong></p>
+        </div>
+        <div class="service">
+          <h3>AV-Vertragsprüfung</h3>
+          <p>Einzeln buchbare Prüfung inkl. Risikobewertung pro Vertrag.</p>
+          <p><strong>ab 75 € zzgl. MwSt</strong></p>
+        </div>
+      </div>
     </section>
 
-    <!-- Kontakt Abschnitt -->
-    <section>
+    <section class="contact">
       <h2>Kontakt</h2>
-      <p>Sie haben Fragen oder möchten ein Angebot erhalten? Schreiben Sie uns oder rufen Sie direkt an:</p>
-      <p>
-        Rogles Datenschutzberatung<br>
-        Bastian Rogles<br>
-        Händelstraße 33<br>
-        44627 Herne<br><br>
-        📧 <a href="mailto:kontakt.rogles@proton.me">kontakt.rogles@proton.me</a><br>
-        📞 0157 562 51164
-      </p>
-      <h3>🔒 Kontakt via Signal</h3>
+      <p style="text-align: center;">Sie erreichen mich per E-Mail unter <a href="mailto:kontakt.rogles@proton.me">kontakt.rogles@proton.me</a><br>
+      oder telefonisch unter 0157 30259913.</p>
+      
+       <h3>🔒 Kontakt via Signal</h3>
       <p>Scannen Sie den QR-Code oder suchen Sie in Signal nach: <strong>GDPR.86</strong></p>
       <img src="signal.png" alt="QR-Code zum Signal-Kontakt GDPR.86" style="max-width: 200px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     </section>
-
   </main>
+  <footer>
+    <p style="text-align: center; padding: 2rem; font-size: 0.9rem; color: #666">
+      © 2025 Rogles Datenschutzberatung
+    </p>
 
   <footer>
     <p><a href="/impressum.html">Impressum</a> | <a href="/datenschutzerklaerung.html">Datenschutzerklärung</a></p>
