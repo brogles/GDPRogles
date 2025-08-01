@@ -224,28 +224,47 @@ footer .footer-content nav {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  /* Hintergrund mit dunklem Verlauf links */
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.3) 100%);
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  color: var(--white);
-  padding: 2rem;
+  padding-left: 3rem;
   border-radius: 0 0 var(--radius) var(--radius);
 }
 
-.hero-overlay h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 1.2;
+.hero-text {
+  color: var(--white);
+  text-align: left;
+  max-width: 600px;
 }
 
+.hero-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+/* Für kleinere Bildschirme */
 @media (max-width: 768px) {
-  .hero-overlay h2 {
-    font-size: 1.8rem;
-  }
   .hero {
     height: 40vh;
+  }
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-overlay {
+    padding-left: 1.5rem;
   }
 }
 
@@ -258,9 +277,13 @@ footer .footer-content nav {
   </header>
 <section class="hero">
   <div class="hero-overlay">
-    <h2>Externer Datenschutzbeauftragter<br>gemäß DSGVO</h2>
+    <div class="hero-text">
+      <h2>Externer Datenschutzbeauftragter</h2>
+      <p>gemäß Datenschutzgrundverordnung</p>
+    </div>
   </div>
 </section>
+
 
   
   <main>
