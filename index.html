@@ -32,36 +32,25 @@
       color: #eee;
     }
 
-.header {
-  background-color: #f8fafc;
-  padding: 2rem 1rem;
-  border-bottom: 1px solid #e2e8f0;
-  font-family: sans-serif;
-}
+    /* Neuer Header */
+    .header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  max-width: 960px;
-  margin: 0 auto;
-  gap: 1.5rem;
-}
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
 
-.logo-icon {
-  flex-shrink: 0;
-}
-
-.header-text h1 {
-  font-size: 1.8rem;
-  color: #1e3a8a; /* Dunkelblau */
-  margin: 0 0 0.5rem;
-}
-
-.header-text p {
-  font-size: 1.1rem;
-  color: #334155; /* Graublau */
-  margin: 0;
-}
+    .header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
 
 
     main {
@@ -300,16 +289,20 @@ footer .footer-content nav {
 </head>
 <body>
 <header class="header">
-  <div class="header-content">
-    <div class="logo-icon">
-      <!-- Schild mit Schloss als SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1e3a8a" width="48" height="48">
-        <path d="M12 1.75L3.75 5.5v6.25c0 5.19 3.4 9.93 8.25 11 4.85-1.07 8.25-5.81 8.25-11V5.5L12 1.75zM12 12a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-3 0v-1A1.5 1.5 0 0112 12zm-3-4a3 3 0 016 0v1H9v-1z"/>
-      </svg>
+  <h1>Rogles <span style="font-weight: 400;">Datenschutzberatung</span></h1>
+  <p>Unterstützung für KMU mit pragmatischem Datenschutz – flexibel, transparent und rechtssicher.</p>
+  <div class="features">
+    <div>
+      <svg viewBox="0 0 24 24"><path d="M12 1.75L3.75 5.5v6.25c0 5.19 3.4 9.93 8.25 11 4.85-1.07 8.25-5.81 8.25-11V5.5L12 1.75zM12 12a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-3 0v-1A1.5 1.5 0 0112 12zm-3-4a3 3 0 016 0v1H9v-1z"/></svg>
+      <span>Rechtssicher</span>
     </div>
-    <div class="header-text">
-      <h1>Rogles Datenschutzberatung</h1>
-      <p>Unterstützung für KMU mit pragmatischem Datenschutz – flexibel, transparent und rechtssicher.</p>
+    <div>
+      <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="none"/></svg>
+      <span>Transparent</span>
+    </div>
+    <div>
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Flexibel</span>
     </div>
   </div>
 </header>
@@ -429,6 +422,7 @@ footer .footer-content nav {
 
 </body>
 </html>
+
 
 
 
