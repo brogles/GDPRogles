@@ -33,29 +33,48 @@
     }
 
    
-    .header {
-      background: linear-gradient(to right, #0d47a1, #1976d2);
-      color: white;
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-    }
+.header {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
+  padding: 3rem 1rem;
+}
+    .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.header-text h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
 
-    .header h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-    }
+.header-text .brand {
+  font-weight: 600;
+}
 
+.header-text .subtitle {
+  font-weight: 400;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
     .header p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
       opacity: 0.95;
     }
-.features {
+.feature {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
 }
 
 .features div {
@@ -67,13 +86,11 @@
   font-size: 0.9rem;
 }
 
-.features svg {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0.5rem;
-  fill: white;
+.feature svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
 }
-
 
     main {
       max-width: 1200px;
@@ -155,6 +172,14 @@
         align-items: center;
       }
     }
+      .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .features-column {
+    align-items: flex-start;
+  }
+}
 
     section h2 {
       text-align: center;
@@ -443,5 +468,6 @@ footer .footer-content nav {
 
 </body>
 </html>
+
 
 
