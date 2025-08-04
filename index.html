@@ -32,21 +32,37 @@
       color: #eee;
     }
 
-header {
-  background-color: var(--blue);
-  color: var(--white);
-  padding: 1.5rem 1rem;
-  text-align: center;
-  border-radius: 0 0 var(--radius) var(--radius);
-  box-shadow: var(--shadow);
-  font-size: 1rem;
+.header {
+  background-color: #f8fafc;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-family: sans-serif;
 }
 
-header h1 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.header-content {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  gap: 1.5rem;
 }
+
+.logo-icon {
+  flex-shrink: 0;
+}
+
+.header-text h1 {
+  font-size: 1.8rem;
+  color: #1e3a8a; /* Dunkelblau */
+  margin: 0 0 0.5rem;
+}
+
+.header-text p {
+  font-size: 1.1rem;
+  color: #334155; /* Graublau */
+  margin: 0;
+}
+
 
     main {
       max-width: 1200px;
@@ -283,9 +299,21 @@ footer .footer-content nav {
   </style>
 </head>
 <body>
-  <header>
-    <h1>Rogles Datenschutzberatung</h1>
-  </header>
+<header class="header">
+  <div class="header-content">
+    <div class="logo-icon">
+      <!-- Schild mit Schloss als SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1e3a8a" width="48" height="48">
+        <path d="M12 1.75L3.75 5.5v6.25c0 5.19 3.4 9.93 8.25 11 4.85-1.07 8.25-5.81 8.25-11V5.5L12 1.75zM12 12a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-3 0v-1A1.5 1.5 0 0112 12zm-3-4a3 3 0 016 0v1H9v-1z"/>
+      </svg>
+    </div>
+    <div class="header-text">
+      <h1>Rogles Datenschutzberatung</h1>
+      <p>Unterstützung für KMU mit pragmatischem Datenschutz – flexibel, transparent und rechtssicher.</p>
+    </div>
+  </div>
+</header>
+
   
 <section class="hero">
   <div class="hero-overlay">
@@ -401,6 +429,7 @@ footer .footer-content nav {
 
 </body>
 </html>
+
 
 
 
